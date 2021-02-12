@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <navigator/>
+    <!--
+      Render the masked component which is clicked by the router...
+      Renders the content of the current selected page.
+
+      :key="$route.path" -> This triggers a new reload of the page, when the path (url) changes.
+       -->
+    <router-view :key="$route.path" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigator from "@/components/Navigator";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Navigator
   }
-}
+};
 </script>
 
 <style>
