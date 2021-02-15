@@ -1,6 +1,5 @@
 <template>
   <nav id="nav">
-    <p class="logo">Navigation</p>
     <ul class="nav-links">
       <li class="links">
         <!-- We define the location of the url to point to -->
@@ -43,11 +42,5 @@ export default {
 
 .links:hover {
   text-decoration: underline;
-}
-
-.logo {
-  font-size: 20px;
-  color: purple;
-  font-weight: bold;
 }
 </style>

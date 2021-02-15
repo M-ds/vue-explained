@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navigator/>
+    <navigator />
     <!--
       Render the masked component which is clicked by the router...
       Renders the content of the current selected page.
@@ -22,6 +22,10 @@ export default {
 </script>
 
 <style>
+html {
+  background-color: lightgray;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
