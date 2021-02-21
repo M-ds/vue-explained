@@ -1,5 +1,12 @@
 # vue-explained
 
+This project contains a reference to the core concepts of Vue 2. 
+In the project the following subjects are covered: 
+- Vue Core (components, data types and so on)
+- Vue Routing 
+- Vuex
+- Axios
+
 ## Project setup
 ```
 npm install
@@ -9,16 +16,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
