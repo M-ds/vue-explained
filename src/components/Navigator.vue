@@ -1,10 +1,21 @@
 <template>
   <nav id="nav">
     <ul class="nav-links">
-      <li class="links">
+      <li class="link">
         <!-- We define the location of the url to point to -->
-        <router-link to="/">Home</router-link>
-        <router-link to="/add">Add Person</router-link>
+        <router-link class="link-text" to="/">Home</router-link>
+      </li>
+      <li class="link">
+        <router-link class="link-text" to="/profile">Profile</router-link>
+      </li>
+      <li class="link">
+        <router-link class="link-text" to="/add">Add Interactable</router-link>
+      </li>
+      <li class="link">
+        <router-link class="link-text" to="/marketplace">Marketplace</router-link>
+      </li>
+      <li class="link">
+        <router-link class="link-text" to="/logout">Log Out</router-link>
       </li>
     </ul>
   </nav>
@@ -25,23 +36,33 @@ export default {
   font-weight: bold;
   color: #2c3e50;
   padding: 0 10px;
-  text-decoration: none;
-}
-
-#nav a.custom-active-link {
-  color: purple;
 }
 
 .nav-links {
-  display: flex;
+  padding: 10px 0;
 }
 
-.links {
-  padding-right: 20px;
+.link {
+  background-color: lightcyan;
+  border-radius: 10%;
+  height: 100px;
+  line-height: 100px;
+  border: solid #4f2f4f 2px;
   list-style: none;
+  margin: 10px;
+  text-align: center;
 }
 
-.links:hover {
-  text-decoration: underline;
+.link:hover {
+  cursor: pointer;
+  background: mediumpurple;
+}
+
+.link-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-decoration: none;
+  color: black;
 }
 </style>

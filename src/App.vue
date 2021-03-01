@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <navigator />
+    <navigator id="nav-bar"/>
     <!--
       Render the masked component which is clicked by the router...
       Renders the content of the current selected page.
 
       :key="$route.path" -> This triggers a new reload of the page, when the path (url) changes.
        -->
-    <router-view :key="$route.path" />
+    <router-view :key="$route.path"/>
   </div>
 </template>
 
@@ -32,6 +32,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav-bar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
 }
 </style>
