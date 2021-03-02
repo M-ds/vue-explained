@@ -4,7 +4,12 @@
       <li class="links">
         <!-- We define the location of the url to point to -->
         <router-link to="/">Home</router-link>
+      </li>
+      <li class="links">
         <router-link to="/add">Add Person</router-link>
+      </li>
+      <li class="links">
+        <router-link to="/overview">Overview</router-link>
       </li>
     </ul>
   </nav>
