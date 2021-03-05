@@ -6,7 +6,7 @@ import Home from "@/views/Home.vue";
 Vue.use(Router);
 
 export default new Router({
-  // This will make the url look normal
+  // This will make the url look normal otherwise you'll see /#/{link}
   mode: "history",
   // With this you can define your own active class (when clicked on router)
   linkExactActiveClass: "custom-active-link",
